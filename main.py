@@ -15,8 +15,8 @@ st.markdown(
     """, unsafe_allow_html=True)
 
 # Page Title and Description
-st.title("Password Strength Checker 🔐", layout="centered")
-st.write("Enter your password below to check your passwords strength 🔍", layout="centered")
+st.title("Password Strength Checker 🔐")
+st.write("Enter your password below to check your passwords strength 🔍")
 
 # Function to check the password strength
 def check_password_strength(password):
@@ -58,7 +58,7 @@ def check_password_strength(password):
             for item in feedback:
                 st.write(item)
 
-password = st.text_input("Enter your Password:", type="password", layout="centered", help="Ensure that your password is strong 🔐")
+password = st.text_input("Enter your Password:", type="password", help="Ensure that your password is strong 🔐")
 # Button Workflow
 if st.button("Check Strength"):
     if password:
